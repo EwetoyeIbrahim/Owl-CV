@@ -4,6 +4,7 @@ function app() {
         title: "Full Stack Developer",
         tag_line: "Knowing is not enough, we must apply...",
         projects: {
+            title: "Works, Projects and Publications",
             icon: "fas fa-project-diagram",
             entries: [
 
@@ -39,7 +40,7 @@ function app() {
                 },
                 {
                     title: "Setting The Template For Naira Denomination Detection",
-                    date: "e: ",
+                    date: "2018",
                     about: `Developed and published a Nigerian Naira denomination detection algorithm. The
                             programme, which was written in MATLAB, was published in International Journal of
                             Research and Publications (<a href="http://ijrp.org/paper-detail/466">DOI: 100191122018465</a>`
@@ -54,9 +55,71 @@ function app() {
         },
         skills: {
             icon: "fas fa-wrench",
-            entries: [
+            entries: {
+                Backend: [
+                    {
+                        name: "Linux",
+                        font: "fab fa-linux fa-5x",
+                        color: "#dd4814"
+                    },
+                    {
+                        name: "PostgreSQL",
+                        font: "fas fa-database fa-5x",
+                        color: "#0064a5"
+                    },
+                    {
+                        name: "Python",
+                        font: "fab fa-python fa-5x",
+                        color: "#4B8BBE"
+                    },
+                    {
+                        name: "Google Cloud",
+                        font: "fab fa-google",
+                        color: "#db3236"
+                    },
 
-            ]
+                ],
+                Frontend: [
+                    {
+                        name: "Javascript",
+                        font: "fab fa-js fa-5x",
+                        color: "#f0db4f"
+                    },
+                    {
+                        name: "HTML 5",
+                        font: "fab fa-html5 fa-5x",
+                        color: "#f06529"
+                    },
+                    {
+                        name: "CSS 3",
+                        font: "fab fa-css3 fa-5x",
+                        color: "#264de4"
+                    },
+                ],
+                Others: [
+                    {
+                        name: "Github",
+                        font: "fab fa-github fa-5x",
+                        color: ""
+                    },
+                    {
+                        name: "Microsoft Suite",
+                        font: "fab fa-microsoft fa-5x",
+                        color: "#00A4EF"
+                    },
+                    {
+                        name: "Google Suite",
+                        font: "fab fa-google fa-5x",
+                        color: "#00A4EF"
+                    },
+                    {
+                        name: "Photoshop",
+                        font: "fab fa-google fa-5x",
+                        color: "#8BC3FC"
+                    },
+
+                ]
+            }
         },
         experience: {
             icon: "fas fa-briefcase",
@@ -99,15 +162,16 @@ function app() {
             this.profile = mydata
         }
     }
-    class EntryCard extends owl.Component {
+    class PlainItemCard extends owl.Component {
         constructor() {
             super(...arguments);
             this.items = mydata.projects.entries
+            this.sec_name = mydata.projects.title
         }
     }
 
     class App extends owl.Component { }
-    App.components = { Nav, EntryCard, Header };
+    App.components = { Nav, Header, PlainItemCard };
 
     // Application setup    
     owl.mount(App, { target: document.body });
