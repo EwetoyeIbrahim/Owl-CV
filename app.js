@@ -4,7 +4,7 @@ function app() {
         title: "Full Stack Developer",
         tag_line: "Knowing is not enough, we must apply...",
         projects: {
-            title: "Works, Projects and Publications",
+            header: "Works, Projects and Publications",
             icon: "fas fa-project-diagram",
             entries: [
 
@@ -121,15 +121,77 @@ function app() {
                 ]
             }
         },
-        experience: {
-            icon: "fas fa-briefcase",
-            entries: [
-
-            ]
-        },
         education: {
+            header: "Education and Trainings",
             icon: "fas fa-graduation-cap",
             entries: [
+                {
+                    title: "B.Tech. Chemical Engineering",
+                    sub_title: "Ladoke Akintola University of Technology, Oyo State.",
+                    date: "2011-2018",
+                    about: `Badged Second Class Upper Honour, and was part of several research teams
+                            in areas where computer applications were needed.`,
+                },
+                {
+                    title: "ICT Certification",
+                    sub_title: "Ladoke Akintola University of Technology, Oyo State.",
+                    date: "2012",
+                    about: `Badged Distinction`,
+                },
+            ]
+        },
+        experience: {
+            header: "Experiences",
+            icon: "fas fa-briefcase",
+            entries: [
+                {
+                    title: "IT Manager",
+                    sub_title: "Medsaf.com, Parkview, Lagos State.",
+                    date: "2019 - Date",
+                    about: `Deployed, troubleshoots and improves the organization's ERP platform;
+                            Developed several scripts (Python and Google App Scripts) for automating some time
+                            consuming processes based on historical data.</p>`,
+                },
+                {
+                    title: "Presiding Officer",
+                    sub_title: "INEC, Gidan Kwano, Kebbi State.",
+                    date: "2019",
+                    about: `Presided over a 1600 Voters' polling unit with two additional voting points during
+                            Nigeria's 2019 general election.`,
+                },
+                {
+                    title: "Head of Mathematics Department",
+                    sub_title: "Government Science College, Ngaski, Kebbi State.",
+                    date: "2018 - 2019",
+                    about: `Prepared senior students of the school for WAEC, NECO, and UTME Mathematics examinations.`,
+                },
+                {
+                    title: "Farm Manager",
+                    sub_title: "Lamdanatu Farms, Idere, Oyo State.",
+                    date: "2017 - 2018",
+                    about: `Managed the start-up from day one of its establishment by laying down the operational protocols
+                            and assigning people to strategic places, to get the work done on time.`,
+                },
+                {
+                    title: "Operations Manager",
+                    sub_title: "Science Prodigy Laboratory Chemical, Ikorodu, Lagos State.",
+                    date: "2017",
+                    about: `Founded a daily-needs chemical production factory which failed within a year but learnt how not to fail again.`,
+                },
+                {
+                    title: "Assistant Plant Operator",
+                    sub_title: "Lagos State Wastewater Management Office, Alausa, Lagos State.",
+                    date: "2016",
+                    about: `Participated in the daily operations of the Lagos state wastewater treatment plant by organizing the staffs
+                            and enforcing due processes, in order to achieve a high-quality effluent.`,
+                },
+                {
+                    title: "Software Tutor",
+                    sub_title: "Science Prodigy Laboratory, Ogbomosho, Oyo State.",
+                    date: "2012 - 2016",
+                    about: `Published YouTube tutorial videos and hosted on-campus software workshops (ASPEN HYSYS | MATLAB | PHOTOSHOP)
+                            for undergraduate and postgraduate students.`,
+                },
 
             ]
         },
@@ -162,15 +224,14 @@ function app() {
             this.profile = mydata
         }
     }
-    class PlainItemCard extends owl.Component {
+    class PlainItemCard extends owl.Component { }
+    class App extends owl.Component {
         constructor() {
             super(...arguments);
-            this.items = mydata.projects.entries
-            this.sec_name = mydata.projects.title
+            this.projects_data = mydata.projects;
         }
     }
 
-    class App extends owl.Component { }
     App.components = { Nav, Header, PlainItemCard };
 
     // Application setup    

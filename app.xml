@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Publications">
+                        <a class="nav-link" href="#Projects">
                             <i t-attf-class="{{ profile.projects.icon }} pr-1"></i>
                             Projects
                         </a>
@@ -58,8 +58,8 @@
     </header>
 
     <div t-name="Section" class="col-12">
-        <div class="card mt-5 mb-5" id="sec_name">
-            <div class="card-header bg-success text-white" t-esc="sec_name"></div>
+        <div class="card mt-5 mb-5" id="props.sec_name">
+            <div class="card-header bg-success text-white" t-esc="props.data.header"></div>
             <t t-raw="0" />
         </div>
     </div>
@@ -68,7 +68,7 @@
     <t t-name="PlainItemCard">
         <t t-call="Section">
             <div class="row row-cols-1 row-cols-md-2">
-                <div class="col p-4" t-foreach="items" t-as="item" t-key="item_index">
+                <div class="col p-4" t-foreach="props.data.entries" t-as="item" t-key="item_index">
                     <div class="card h-100">
                         <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}">
                             <h5 class="card-title" t-esc="item.title"></h5>
@@ -83,27 +83,12 @@
 
 
     <!-- This card is used for img-text entries like tools -->
-    <t t-name="ImgItemCard">
-        <t t-call="Section">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col p-4" t-foreach="items" t-as="item" t-key="item_index">
-                    <div class="card h-100">
-                        <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}">
-                            <h5 class="card-title" t-esc="item.title"></h5>
-                            <p t-esc="item.date"></p>
-                            <p t-raw="item.about"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </t>
-    </t>
+    
 
 
     <div t-name="App" class="app">
         <Nav />
         <Header />
-        <PlainItemCard />
-
+        <PlainItemCard sec_name="Projects" data="projects_data"/>
     </div>
 </templates>
