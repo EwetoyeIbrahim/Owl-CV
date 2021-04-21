@@ -3,7 +3,7 @@
     <nav t-name="Nav" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <strong>EWETOYE Ibrahim</strong>
+                <strong t-esc="profile.name"></strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,25 +12,25 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#Publications">
-                            <i class="fas fa-project-diagram pr-1"></i>
+                            <i t-attf-class="{{ profile.projects.icon }} pr-1"></i>
                             Projects
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Skills">
-                            <i class="fas fa-wrench pr-1"></i>
+                            <i t-attf-class="{{ profile.skills.icon }} pr-1"></i>
                             Skills
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Experience">
-                            <i class="fas fa-briefcase pr-1"></i>
+                            <i t-attf-class="{{ profile.experience.icon }} pr-1"></i>
                             Experience
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Education">
-                            <i class="fas fa-graduation-cap pr-1"></i>
+                            <i t-attf-class="{{ profile.education.icon }} pr-1"></i>
                             Education
                         </a>
                     </li>
@@ -45,15 +45,11 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-right">
-                    <a href="https://github.com/EwetoyeIbrahim">
-                        <i class="fab fa-github-alt fa-3x pr-3 text-dark"></i>
-                    </a>
-                    <a href="https://linkedin.com/Ewetoye" class="text-primary">
-                        <i class="fab fa-linkedin-in fa-3x pr-3" style="color: #0e76a8;"></i>
-                    </a>
-                    <a href="mailto:i.ewetoye@gmail.com">
-                        <i class="far fa-envelope fa-3x text-danger"></i>
-                    </a>
+                    <div t-foreach="links" t-as="item" t-key="item.id">
+                        <a t-att-href="item.url">
+                            <i t-attf-class="{{ item.icon }} pr-3"></i>
+                        </a>
+                    </div>
                     <h1 style="font-size:4vw;">Full Stack Developer</h1>
                     <p class="lead" style="font-size:2vw;">Knowing is not enough, we must apply</p>
                 </div>
