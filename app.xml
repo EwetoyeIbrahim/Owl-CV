@@ -45,13 +45,13 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-right">
-                    <div t-foreach="links" t-as="item" t-key="item.id">
-                        <a t-att-href="item.url">
-                            <i t-attf-class="{{ item.icon }} pr-3"></i>
+                    <t t-foreach="profile.links" t-as="link" t-key="link_index">
+                        <a t-att-href="link.url">
+                            <i t-attf-class="{{ link.icon }} pr-3"></i>
                         </a>
-                    </div>
-                    <h1 style="font-size:4vw;">Full Stack Developer</h1>
-                    <p class="lead" style="font-size:2vw;">Knowing is not enough, we must apply</p>
+                    </t>
+                    <h1 style="font-size:4vw;" t-esc="profile.title"></h1>
+                    <p class="lead" style="font-size:2vw;" t-esc="profile.tag_line"></p>
                 </div>
             </div>
         </div>
@@ -59,12 +59,22 @@
     </header>
 
 
-    <div t-name="EntryCard">
-        <div class="p-3 bg-light" t-foreach="items" t-as="item" t-key="item.id">
-            <h5 t-esc="item.title"></h5>
-            <p t-esc="item.date"></p>
-            <p t-raw="item.about"></p>
+    <div t-name="EntryCard" class="col-12">
+        <div class="card mt-5 mb-5" id="Publications">
+            <div class="card-header bg-success text-white">
+                Works, Projects and Publications
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4" t-foreach="items" t-as="item" t-key="item_index">
+                    <div class="card-body">
+                        <h5 class="card-title" t-esc="item.title"></h5>
+                        <p t-esc="item.date"></p>
+                        <p t-raw="item.about"></p>
+                    </div>
+                </div>  
+            </div>
         </div>
+
     </div>
 
     <div t-name="App" class="app">
