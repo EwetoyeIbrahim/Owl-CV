@@ -1,5 +1,5 @@
 function app() {
-    const mydata = {
+    const profile_data = {
         name: "EWETOYE Ibrahim",
         title: "Full Stack Developer",
         tag_line: "Knowing is not enough, we must apply...",
@@ -54,6 +54,7 @@ function app() {
             ]
         },
         skills: {
+            header: "Skills and Tools",
             icon: "fas fa-wrench",
             entries: {
                 Backend: [
@@ -74,8 +75,8 @@ function app() {
                     },
                     {
                         name: "Google Cloud",
-                        font: "fab fa-google",
-                        color: "#db3236"
+                        font: "fas fa-cloud fa-5x",
+                        color: "#4885ed"
                     },
 
                 ],
@@ -110,11 +111,11 @@ function app() {
                     {
                         name: "Google Suite",
                         font: "fab fa-google fa-5x",
-                        color: "#00A4EF"
+                        color: "#db3236"
                     },
                     {
                         name: "Photoshop",
-                        font: "fab fa-google fa-5x",
+                        font: "fas fa-palette fa-5x",
                         color: "#8BC3FC"
                     },
 
@@ -215,24 +216,25 @@ function app() {
     class Nav extends owl.Component {
         constructor() {
             super(...arguments);
-            this.profile = mydata
+            this.profile = profile_data
         }
     }
     class Header extends owl.Component {
         constructor() {
             super(...arguments);
-            this.profile = mydata
+            this.profile = profile_data
         }
     }
+    class FontItemCard extends owl.Component { }
     class PlainItemCard extends owl.Component { }
     class App extends owl.Component {
         constructor() {
             super(...arguments);
-            this.projects_data = mydata.projects;
+            this.profile = profile_data;
         }
     }
 
-    App.components = { Nav, Header, PlainItemCard };
+    App.components = { Nav, Header, PlainItemCard, FontItemCard};
 
     // Application setup    
     owl.mount(App, { target: document.body });

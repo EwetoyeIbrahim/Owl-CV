@@ -49,8 +49,8 @@
                             <i t-attf-class="{{ link.icon }} pr-3"></i>
                         </a>
                     </t>
-                    <h1 style="font-size:4vw;" t-esc="profile.title"></h1>
-                    <p class="lead" style="font-size:2vw;" t-esc="profile.tag_line"></p>
+                    <h1 id="title" t-esc="profile.title"></h1>
+                    <p class="lead" id="tag_line" t-esc="profile.tag_line"></p>
                 </div>
             </div>
         </div>
@@ -72,6 +72,7 @@
                     <div class="card h-100">
                         <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}">
                             <h5 class="card-title" t-esc="item.title"></h5>
+                            <p t-if="item.sub_title" t-esc="item.sub_title"></p>
                             <p t-esc="item.date"></p>
                             <p t-raw="item.about"></p>
                         </div>
@@ -83,12 +84,29 @@
 
 
     <!-- This card is used for img-text entries like tools -->
-    
+    <t t-name="FontItemCard">
+        <t t-call="Section">
+            <div class="col p-3" t-foreach="props.data.entries" t-as="skill" t-key="skill_index">
+                <h5 t-esc="skill">Backend:</h5>
+                <div class="row col-12">
+                    <t t-foreach="skill_value" t-as="item" t-key="item_index">
+                        <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+                            <i t-att-class="item.font" t-attf-style="color: {{item.color}}"></i>
+                            <p t-esc="item.name"></p>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </t>
 
 
     <div t-name="App" class="app">
         <Nav />
         <Header />
-        <PlainItemCard sec_name="Projects" data="projects_data"/>
+        <PlainItemCard sec_name="Projects" data="profile.projects" />
+        <FontItemCard sec_name="Skills" data="profile.skills" />
+        <PlainItemCard sec_name="Experiences" data="profile.experience" />
+        <PlainItemCard sec_name="Education" data="profile.education" />
     </div>
 </templates>

@@ -6,3 +6,11 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#title{
+    font-size:4vw;
+}
+
+#tag_line{
+    font-size:2vw;
+}
