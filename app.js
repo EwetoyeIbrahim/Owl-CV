@@ -4,6 +4,9 @@ function app() {
         title: "Full Stack Developer",
         tag_line: "Knowing is not enough, we must apply...",
         projects: {
+            id: "Projects",
+            // Optional type key, defaults to `plaincard` when not specified
+            type: "plaincard",
             header: "Works, Projects and Publications",
             icon: "fas fa-project-diagram",
             entries: [
@@ -54,6 +57,8 @@ function app() {
             ]
         },
         skills: {
+            id: "Skills",
+            type: "fontcard",
             header: "Skills and Tools",
             icon: "fas fa-wrench",
             entries: {
@@ -123,6 +128,7 @@ function app() {
             }
         },
         education: {
+            id: "Education",
             header: "Education and Trainings",
             icon: "fas fa-graduation-cap",
             entries: [
@@ -142,6 +148,7 @@ function app() {
             ]
         },
         experience: {
+            id: "Experience",
             header: "Experiences",
             icon: "fas fa-briefcase",
             entries: [
@@ -214,22 +221,19 @@ function app() {
     }
 
     class Nav extends owl.Component {
-        constructor() {
-            super(...arguments);
+        setup(){
             this.profile = profile_data
         }
     }
     class Header extends owl.Component {
-        constructor() {
-            super(...arguments);
+        setup(){
             this.profile = profile_data
         }
     }
     class FontItemCard extends owl.Component { }
     class PlainItemCard extends owl.Component { }
     class App extends owl.Component {
-        constructor() {
-            super(...arguments);
+        setup(){
             this.profile = profile_data;
         }
     }
