@@ -1,7 +1,7 @@
 header{
     height: 100vh;
     min-height: 500px;
-    background-image: url('../img/header_img.jpg');
+    background-image: url('img/header_img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
