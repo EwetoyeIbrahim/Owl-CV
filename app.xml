@@ -1,4 +1,16 @@
 <templates>
+
+    <!-- Head variables -->
+    <t t-name="Head" class="app">
+        <div>
+            <title t-esc="profile.name"></title>
+            <!-- Open Graph Stuffs for Social Sharing-->
+            <meta property="og:type" content="profile" />
+            <meta property="profile:username" t-att-content="profile.name" />
+            <meta property="og:image" t-attf-content="{{window.location.href}}static/img/header_img.jpg" />
+        </div>
+    </t>
+
     <!-- Navigation -->
     <nav t-name="Nav" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container">
@@ -36,9 +48,9 @@
                 </div>
             </div>
         </div>
-
     </header>
 
+    <!-- Section blueprint-->
     <div t-name="Section" class="col-12" t-att-id="props.data.id">
         <div class="card mt-5 mb-5">
             <div class="card-header bg-success text-white" t-esc="props.data.header"></div>
@@ -65,7 +77,6 @@
         </t>
     </t>
 
-
     <!-- This card is used for img-text entries like tools -->
     <t t-name="FontItemCard">
         <t t-call="Section">
@@ -83,8 +94,8 @@
         </t>
     </t>
 
-
-    <div t-name="App" class="app">
+    <!-- The full Body-->
+    <div t-name="Body">
         <Nav />
         <Header />
         <t t-foreach="profile" t-as="pkey" t-key="pkey_index" t-if="pkey_value.id">
@@ -96,4 +107,5 @@
             </t>
         </t>
     </div>
+
 </templates>
