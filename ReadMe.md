@@ -1,18 +1,19 @@
-# Owl_Cv
-
-## Story:
-I had an html CV which I use to edit its raw index.html  when adding new input.
-It was okay for a reason: Opening the html in any browser displays my CV without having to spring up servers to run python or php like would have been the case if frameworks like flask, Django, or wordpress. which makes very easy to host on github pages... free online prsence for life!!!  
-Some drawbacks though, to update the CV, the file will have to be edited will with the full markups which will at some point a very long html file...
-**What if I can just supply a key value pairs and get my CV generated still without having to spin up a server?**
-
-## Solution
-Simply use one of the available designs, fill the values like name, job descriptions...; Using the power of Odoo's owl, your CV get computed and served on the go.  
-Want to add new entries like experiences, education e.t.c? Simply add a new value and you are good to go!!!
+# CoverPro
+A vibrant professinal full front cover CV with moderate animations.
 
 ## How to use
 1. Clone Owl_CV to use locally, or fork to your list of repos. (If you want to host it on Github, you will have to rename it to your GithubName.github.io)
 2. Make your preferred style your default branch
-3. A well crafted image for this profile picture for the header, and  Favicon
-4. Edit the app.js file to suite your details
-5. Commit and your version and you are good to go.
+3. Customize as stated in the [customizations section](#customizations).
+5. Commit your version and you are good to go.
+
+
+
+
+## Customizations
+### Static files
+1. Full front cover picture with a recommended size of 800x450. Its used as the front cover and also for scocial sharing. It must named `header_img.jpg` and located at `static\img`
+2. Favicon with a recommended size of 48x48. It must be named `favicon.ico` and located at `static\img\`
+
+### Profile
+The `profile_data` variable in `app.js` has to be personalized with the appropriate values for ezch of the keys as explained in the comments following each keys.

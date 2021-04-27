@@ -1,12 +1,14 @@
 // Profile information
 const profile_data = {
     name: "EWETOYE Ibrahim", // Full name
+    navigation_color: "black",
     title: "Full Stack Developer", // Job Role
     tag_line: "Knowing is not enough, we must apply...", // Optional favourite line
     projects: {
         id: "Projects",
         // Optional type key, defaults to `plaincard` when not specified
         type: "plaincard",
+        color: "green",
         header: "Works, Projects and Publications",
         icon: "fas fa-project-diagram",
         entries: [
@@ -59,6 +61,7 @@ const profile_data = {
     skills: {
         id: "Skills",
         type: "fontcard",
+        color: "green",
         header: "Skills and Tools",
         icon: "fas fa-wrench",
         entries: {
@@ -129,6 +132,7 @@ const profile_data = {
     },
     education: {
         id: "Education",
+        color: "green",
         header: "Education and Trainings",
         icon: "fas fa-graduation-cap",
         entries: [
@@ -149,6 +153,7 @@ const profile_data = {
     },
     experience: {
         id: "Experience",
+        color: "green",
         header: "Experiences",
         icon: "fas fa-briefcase",
         entries: [

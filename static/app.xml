@@ -12,7 +12,7 @@
     </t>
 
     <!-- Navigation -->
-    <nav t-name="Nav" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <nav t-name="Nav" class="navbar navbar-expand-lg navbar-dark shadow fixed-top" t-attf-style="background-color: {{profile.navigation_color}}">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <strong t-esc="profile.name"></strong>
@@ -36,7 +36,7 @@
     <!-- Full Page Image Header with Vertically Centered Content -->
     <header t-name="Header">
         <div class="container h-100">
-            <div class="row h-100 align-items-center">
+            <div class="row h-100 align-items-center" data-aos="zoom-in-left" data-aos-duration="3000">
                 <div class="col-12 text-right">
                     <t t-foreach="profile.links" t-as="link" t-key="link_index">
                         <a t-att-href="link.url">
@@ -53,7 +53,7 @@
     <!-- Section blueprint-->
     <div t-name="Section" class="col-12" t-att-id="props.data.id">
         <div class="card mt-5 mb-5">
-            <div class="card-header bg-success text-white" t-esc="props.data.header"></div>
+            <div class="card-header text-white" t-attf-style="background-color: {{props.data.color}}" t-esc="props.data.header"></div>
             <t t-raw="0" />
         </div>
     </div>
@@ -65,7 +65,8 @@
                 <div class="col p-4" t-foreach="props.data.entries" t-as="item" t-key="item_index">
                     <div class="card h-100">
                         <div t-esc="props.secname"></div>
-                        <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}">
+                        <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}"
+                            t-attf-data-aos="{{ (item_index % 2 === 0) ? 'fade-right': 'fade-left' }}">
                             <h5 class="card-title" t-esc="item.title"></h5>
                             <p t-if="item.sub_title" t-esc="item.sub_title"></p>
                             <p t-esc="item.date"></p>
@@ -82,7 +83,7 @@
         <t t-call="Section">
             <div class="col p-3" t-foreach="props.data.entries" t-as="skill" t-key="skill_index">
                 <h5 t-esc="skill"></h5>
-                <div class="row col-12">
+                <div class="row col-12" data-aos="fade-up">
                     <t t-foreach="skill_value" t-as="item" t-key="item_index">
                         <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
                             <i t-att-class="item.font" t-attf-style="color: {{item.color}}"></i>
