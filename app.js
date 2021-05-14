@@ -18,6 +18,18 @@ const profile_data = {
         icon: "fas fa-project-diagram",  // Icon to represent the section, must be an fa icon
         entries: [ // All items to be placed under this section
             {
+                title: "Flask-Marketplace", // Title of the entry
+                date: "2021", // Date in and desired format
+                // A short description that can be styled Bootstrap4 syntax
+                about: `<img src="https://img.shields.io/badge/Bootstrap-4.4.1-blue"/>
+                        <img src="https://img.shields.io/badge/Flask-1.1.2-black"/>
+                        <img src="https://img.shields.io/badge/FlaskSQLAlchemy-2.4.4-black"/>
+                        <img src="https://img.shields.io/badge/FlutterwaveApi-V3-orange"/>
+                        <img src="https://img.shields.io/badge/JQuery-3.5.1-yellow"/>
+                        <p class="pt-2">An open-source modular multivendor and multicurrency marketplace solution. <br/>
+                        Try out a working version <a href="http://ewetoye.pythonanywhere.com/">here</a></p>`
+            },
+            {
                 title: "Databank", // Title of the entry
                 date: "2020", // Date in and desired format
                 // A short description that can be styled with html syntax
