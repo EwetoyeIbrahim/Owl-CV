@@ -1,21 +1,26 @@
 // Profile information
 const profile_data = {
     name: "EWETOYE Ibrahim", // Full name
-    navigation_color: "black",
+    navigation_color: "black", // Color of the fixed top bar.
     title: "Full Stack Developer", // Job Role
     tag_line: "Knowing is not enough, we must apply...", // Optional favourite line
+    
+    // Next, you define sections of your CV and their entries as exemplified in the subsequent example.
     projects: {
-        id: "Projects",
-        // Optional type key, defaults to `plaincard` when not specified
-        type: "plaincard",
-        color: "green",
-        header: "Works, Projects and Publications",
-        icon: "fas fa-project-diagram",
-        entries: [
-
+        id: "Projects", // Sections must possess an ID like this.
+        /* Optional type key:
+            Defaults to `plaincard` when not specified.
+            It can be `plaincard` or `fontcard` as used in the Skills section
+        */
+        type: "plaincard", // Specifies what and how the entries will be arranged
+        color: "green", // Colour of the section bar
+        header: "Works, Projects and Publications", // Title of the section
+        icon: "fas fa-project-diagram",  // Icon to represent the section, must be an fa icon
+        entries: [ // All items to be placed under this section
             {
-                title: "Databank",
-                date: "2020",
+                title: "Databank", // Title of the entry
+                date: "2020", // Date in and desired format
+                // A short description that can be styled with html syntax
                 about: `Developed and deployed <a href="https://testbank.medsaf.com">testbank.medsaf.com</a>,
                         a proprietary role-based data analysis platform for Medsaf (a medical supply chain industry).`
             },
@@ -60,11 +65,13 @@ const profile_data = {
     },
     skills: {
         id: "Skills",
-        type: "fontcard",
+        type: "fontcard", // Using the `fontcard` type here, to show its use.
         color: "green",
         header: "Skills and Tools",
         icon: "fas fa-wrench",
         entries: {
+            // For `fontcard` type, the title is the key of a list of dict, as shown.
+            // See how this looks in the browers so as to be able customized it.
             Backend: [
                 {
                     name: "Linux",
