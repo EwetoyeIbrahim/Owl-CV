@@ -1,6 +1,6 @@
 <templates>
 
-    <!-- Head variables -->
+    <!-- === Head variables === -->
     <t t-name="Head" class="app">
         <div>
             <title t-esc="profile.name"></title>
@@ -11,7 +11,7 @@
         </div>
     </t>
 
-    <!-- Navigation -->
+    <!-- === Navigation === -->
     <nav t-name="Nav" class="navbar navbar-expand-lg navbar-dark shadow fixed-top" t-attf-style="background-color: {{profile.navigation_color}}">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <!-- Full Page Image Header with Vertically Centered Content -->
+    <!-- === Full Page Image Header with Vertically Centered Content === -->
     <header t-name="Header">
         <div class="container h-100">
             <div class="row h-100 align-items-center" data-aos="zoom-in-left" data-aos-duration="3000">
@@ -50,7 +50,7 @@
         </div>
     </header>
 
-    <!-- Section blueprint-->
+    <!-- === Section blueprint === -->
     <div t-name="Section" class="col-12" t-att-id="props.data.id">
         <div class="card mt-5 mb-5">
             <div class="card-header text-white" t-attf-style="background-color: {{props.data.color}}" t-esc="props.data.header"></div>
@@ -58,10 +58,10 @@
         </div>
     </div>
 
-    <!-- This card is used for plain entries like publications ans experience -->
+    <!-- === This card is used for plain entries like publications ans experience === -->
     <t t-name="PlainItemCard">
         <t t-call="Section">
-            <div class="row row-cols-1 row-cols-md-2">
+            <div class="row row-cols-1 row-cols-md-2" style="overflow-x: hidden;">
                 <div class="col p-4" t-foreach="props.data.entries" t-as="item" t-key="item_index">
                     <div class="card h-100">
                         <div t-esc="props.secname"></div>
@@ -78,7 +78,7 @@
         </t>
     </t>
 
-    <!-- This card is used for img-text entries like tools -->
+    <!-- === This card is used for img-text entries like tools === -->
     <t t-name="FontItemCard">
         <t t-call="Section">
             <div class="col p-3" t-foreach="props.data.entries" t-as="skill" t-key="skill_index">
@@ -95,7 +95,7 @@
         </t>
     </t>
 
-    <!-- The full Body-->
+    <!-- === The Full Body === -->
     <div t-name="Body">
         <Nav />
         <Header />
