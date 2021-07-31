@@ -18,23 +18,34 @@ const profile_data = {
         icon: "fas fa-project-diagram",  // Icon to represent the section, must be an fa icon
         entries: [ // All items to be placed under this section
             {
+                title: "Flask-Odoo-GraphQL", // Title of the entry
+                date: "2021", // Date in and desired format
+                // A short description that can be styled Bootstrap4 syntax
+                about: `<img src="https://img.shields.io/badge/cryptography-3.4.7-blue"/>
+                        <img src="https://img.shields.io/badge/Flask-2.0.1-black"/>
+                        <img src="https://img.shields.io/badge/graphene-2.1.8-orange"/>
+                        <p class="pt-2">
+                            An app for securely wrapping Odoo instance with Graphql API for 
+                            consumption by external services. It can either be hosted as a standalone 
+                            web app or to extend an existing flask app.<br/>
+                            Available on <a href="https://pypi.org/project/flask-odoo-graphql/">PYPI</a> and 
+                            <a href="https://github.com/EwetoyeIbrahim/flask-odoo-graphql">Github</a>.
+                        </p>`
+            },
+            {
                 title: "Flask-Marketplace", // Title of the entry
                 date: "2021", // Date in and desired format
                 // A short description that can be styled Bootstrap4 syntax
                 about: `<img src="https://img.shields.io/badge/Bootstrap-4.4.1-blue"/>
-                        <img src="https://img.shields.io/badge/Flask-1.1.2-black"/>
+                        <img src="https://img.shields.io/badge/Flask-2.0.1-black"/>
                         <img src="https://img.shields.io/badge/FlaskSQLAlchemy-2.4.4-black"/>
                         <img src="https://img.shields.io/badge/FlutterwaveApi-V3-orange"/>
                         <img src="https://img.shields.io/badge/JQuery-3.5.1-yellow"/>
-                        <p class="pt-2">An open-source modular multivendor and multicurrency marketplace solution. <br/>
-                        Try out a working version <a href="http://ewetoye.pythonanywhere.com/">here</a></p>`
-            },
-            {
-                title: "Databank", // Title of the entry
-                date: "2020", // Date in and desired format
-                // A short description that can be styled with html syntax
-                about: `Developed and deployed <a href="https://testbank.medsaf.com">testbank.medsaf.com</a>,
-                        a proprietary role-based data analysis platform for Medsaf (a medical supply chain industry).`
+                        <p class="pt-2">
+                            An open-source modular multivendor and multicurrency marketplace solution.<br/>
+                            Available on <a href="https://pypi.org/project/Flask-Marketplace/">PYPI</a> and 
+                            <a href="https://github.com/EwetoyeIbrahim/Flask-Marketplace">Github</a>.
+                        </p>`
             },
             {
                 title: "Odoo Modules",
@@ -45,20 +56,26 @@ const profile_data = {
                         enables individuals and merchant process payment transactions through Paystack on Odoo ERP system`
             },
             {
+                title: "Databank", // Title of the entry
+                date: "2020", // Date in and desired format
+                // A short description that can be styled with html syntax
+                about: `Developed and deployed <a href="https://testbank.medsaf.com">testbank.medsaf.com</a>,
+                a proprietary role-based data analysis platform for Medsaf (a medical supply chain industry).`
+            },
+            {
                 title: "Equimolar-Blog",
                 date: "2020",
                 about: `Developed <a href="https://github.com/EwetoyeIbrahim/Equimolar-Blog">Equimolar-Blog</a>, an open-source
-                        blogging engine that injects blogging functionality into existing and new python web applications.
-                        An example of its use case is <a href="https://www.equimolar.com">equimolar.com</a>, a data analysis blog.`
+                blogging engine that injects blogging functionality into existing and new python web applications.`
             },
             {
                 title: "MathSend",
-                date: "2019 - 2020",
-                about: `Developed <a href="https://www.mathsend.com">Mathsend chatbot</a>, which handles both symbolic and
+                date: "2019",
+                about: `Developed <a href="http://mathsend.com/">Mathsend chatbot</a>, which handles both symbolic and
                         numerical mathematical expressions through chat messages. It is currently live on messenger
                         (<a href="https://m.me/mathsend.bot"> m.me/mathsend.bot</a>),
                         Telegram (<a href="https://t.me/mathsend_bot">t.me/mathsend_bot</a>)
-                        and its website, <a href="https://www.mathsend.com"> mathsend.com`
+                        and its website, <a href="http://mathsend.com/"> mathsend.com`
             },
             {
                 title: "Setting The Template For Naira Denomination Detection",
@@ -87,62 +104,73 @@ const profile_data = {
             Backend: [
                 {
                     name: "Linux",
-                    font: "fab fa-linux fa-5x",
+                    font: "fab fa-linux",
                     color: "#dd4814"
                 },
                 {
                     name: "PostgreSQL",
-                    font: "fas fa-database fa-5x",
+                    font: "fas fa-database",
                     color: "#0064a5"
                 },
                 {
                     name: "Python",
-                    font: "fab fa-python fa-5x",
+                    font: "fab fa-python",
                     color: "#4B8BBE"
                 },
                 {
                     name: "Google Cloud",
-                    font: "fas fa-cloud fa-5x",
+                    font: "fas fa-cloud",
                     color: "#4885ed"
                 },
 
             ],
             Frontend: [
                 {
-                    name: "Javascript",
-                    font: "fab fa-js fa-5x",
-                    color: "#f0db4f"
+                    name: "CSS 3",
+                    font: "fab fa-css3",
+                    color: "#264de4"
                 },
                 {
                     name: "HTML 5",
-                    font: "fab fa-html5 fa-5x",
+                    font: "fab fa-html5",
                     color: "#f06529"
                 },
                 {
-                    name: "CSS 3",
-                    font: "fab fa-css3 fa-5x",
-                    color: "#264de4"
+                    name: "Javascript",
+                    font: "fab fa-js",
+                    color: "#f0db4f"
                 },
+                {
+                    name: "Bootstrap",
+                    font: "fas fa-file-code",
+                    color: "#563d7c"
+                },
+                {
+                    name: "Tailwind CSS",
+                    font: "fas fa-file-code",
+                    color: "#05B7D3"
+                },
+                
             ],
             Others: [
                 {
                     name: "Github",
-                    font: "fab fa-github fa-5x",
+                    font: "fab fa-github",
                     color: ""
                 },
                 {
                     name: "Microsoft Suite",
-                    font: "fab fa-microsoft fa-5x",
+                    font: "fab fa-microsoft",
                     color: "#00A4EF"
                 },
                 {
                     name: "Google Suite",
-                    font: "fab fa-google fa-5x",
+                    font: "fab fa-google",
                     color: "#db3236"
                 },
                 {
                     name: "Photoshop",
-                    font: "fas fa-palette fa-5x",
+                    font: "fas fa-palette",
                     color: "#8BC3FC"
                 },
 
@@ -177,12 +205,11 @@ const profile_data = {
         icon: "fas fa-briefcase",
         entries: [
             {
-                title: "IT Manager",
+                title: "Full Stack Developer",
                 sub_title: "Medsaf.com, Parkview, Lagos State.",
                 date: "2019 - Date",
-                about: `Deployed, troubleshoots and improves the organization's ERP platform;
-                        Developed several scripts (Python and Google App Scripts) for automating some time
-                        consuming processes based on historical data.</p>`,
+                about: `Deployed and maintains the organization's ERP platform;
+                In charge of developing new businesssolutions`,
             },
             {
                 title: "Presiding Officer",

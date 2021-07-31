@@ -65,8 +65,7 @@
                 <div class="col p-4" t-foreach="props.data.entries" t-as="item" t-key="item_index">
                     <div class="card h-100">
                         <div t-esc="props.secname"></div>
-                        <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}"
-                            t-attf-data-aos="{{ (item_index % 2 === 0) ? 'fade-right': 'fade-left' }}">
+                        <div t-attf-class="card-body {{ (item_index % 2 === 0) ? '': 'bg-light' }}" t-attf-data-aos="{{ (item_index % 2 === 0) ? 'fade-right': 'fade-left' }}">
                             <h5 class="card-title" t-esc="item.title"></h5>
                             <p t-if="item.sub_title" t-esc="item.sub_title"></p>
                             <p t-esc="item.date"></p>
@@ -85,10 +84,10 @@
                 <h5 t-esc="skill"></h5>
                 <div class="row col-12" data-aos="fade-up">
                     <t t-foreach="skill_value" t-as="item" t-key="item_index">
-                        <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
-                            <i t-att-class="item.font" t-attf-style="color: {{item.color}}"></i>
-                            <p t-esc="item.name"></p>
-                        </div>
+                        <span class="badge rounded-pill bg-light py-2 px-4 font-weight-normal m-2" style="font-size:20px">
+                            <i t-attf-style="color: {{item.color}}" t-attf-class="{{item.font}} pr-2"></i>
+                            <span t-esc="item.name"></span>
+                        </span>
                     </t>
                 </div>
             </div>
