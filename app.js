@@ -49,7 +49,7 @@ const profile_data = {
             },
             {
                 title: "Odoo Modules",
-                date: "2020",
+                date: "2020-2021",
                 about: `Developed <a href="https://apps.odoo.com/apps/modules/12.0/OdooSlack">OdooSlack</a> and 
                         <a href="https://apps.odoo.com/apps/modules/12.0/payment_paystack_acquirer">Paystack Payment Acquirer</a>. 
                         The former sends notifications to Slack channels based on specified triggers and actions whereas the latter
@@ -101,6 +101,28 @@ const profile_data = {
         entries: {
             // For `fontcard` type, the title is the key of a list of dict, as shown.
             // See how this looks in the browers so as to be able customized it.
+            "Frameworks and Libraries": [
+                {
+                    name: "Flask",
+                    font: "fab fa-python",
+                    color: "#000000"
+                },
+                {
+                    name: "ReactJS",
+                    font: "fab fa-js",
+                    color: "#61dbfb"
+                },
+                {
+                    name: "Django",
+                    font: "fab fa-python",
+                    color: "#1c7a5a"
+                },
+                {
+                    name: "JQuery",
+                    font: "fab fa-js",
+                    color: "#0868ac"
+                },
+            ],
             Backend: [
                 {
                     name: "Linux",
@@ -122,7 +144,6 @@ const profile_data = {
                     font: "fas fa-cloud",
                     color: "#4885ed"
                 },
-
             ],
             Frontend: [
                 {
@@ -173,7 +194,6 @@ const profile_data = {
                     font: "fas fa-palette",
                     color: "#8BC3FC"
                 },
-
             ]
         }
     },
