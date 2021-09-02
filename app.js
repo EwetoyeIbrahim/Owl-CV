@@ -18,21 +18,6 @@ const profile_data = {
         icon: "fas fa-project-diagram",  // Icon to represent the section, must be an fa icon
         entries: [ // All items to be placed under this section
             {
-                title: "Flask-Odoo-GraphQL", // Title of the entry
-                date: "2021", // Date in and desired format
-                // A short description that can be styled Bootstrap4 syntax
-                about: `<img src="https://img.shields.io/badge/cryptography-3.4.7-blue"/>
-                        <img src="https://img.shields.io/badge/Flask-2.0.1-black"/>
-                        <img src="https://img.shields.io/badge/graphene-2.1.8-orange"/>
-                        <p class="pt-2">
-                            An app for securely wrapping Odoo instance with Graphql API for 
-                            consumption by external services. It can either be hosted as a standalone 
-                            web app or to extend an existing flask app.<br/>
-                            Available on <a href="https://pypi.org/project/flask-odoo-graphql/">PYPI</a> and 
-                            <a href="https://github.com/EwetoyeIbrahim/flask-odoo-graphql">Github</a>.
-                        </p>`
-            },
-            {
                 title: "Flask-Marketplace", // Title of the entry
                 date: "2021", // Date in and desired format
                 // A short description that can be styled Bootstrap4 syntax
@@ -46,14 +31,6 @@ const profile_data = {
                             Available on <a href="https://pypi.org/project/Flask-Marketplace/">PYPI</a> and 
                             <a href="https://github.com/EwetoyeIbrahim/Flask-Marketplace">Github</a>.
                         </p>`
-            },
-            {
-                title: "Odoo Modules",
-                date: "2020-2021",
-                about: `Developed <a href="https://apps.odoo.com/apps/modules/12.0/OdooSlack">OdooSlack</a> and 
-                        <a href="https://apps.odoo.com/apps/modules/12.0/payment_paystack_acquirer">Paystack Payment Acquirer</a>. 
-                        The former sends notifications to Slack channels based on specified triggers and actions whereas the latter
-                        enables individuals and merchant process payment transactions through Paystack on Odoo ERP system`
             },
             {
                 title: "Databank", // Title of the entry
