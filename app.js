@@ -33,13 +33,6 @@ const profile_data = {
                         </p>`
             },
             {
-                title: "Databank", // Title of the entry
-                date: "2020", // Date in and desired format
-                // A short description that can be styled with html syntax
-                about: `Developed and deployed <a href="https://testbank.medsaf.com">testbank.medsaf.com</a>,
-                a proprietary role-based data analysis platform for Medsaf (a medical supply chain industry).`
-            },
-            {
                 title: "Equimolar-Blog",
                 date: "2020",
                 about: `Developed <a href="https://github.com/EwetoyeIbrahim/Equimolar-Blog">Equimolar-Blog</a>, an open-source
