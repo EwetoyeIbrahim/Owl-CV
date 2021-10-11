@@ -18,21 +18,6 @@ const profile_data = {
         icon: "fas fa-project-diagram",  // Icon to represent the section, must be an fa icon
         entries: [ // All items to be placed under this section
             {
-                title: "Flask-Marketplace", // Title of the entry
-                date: "2021", // Date in and desired format
-                // A short description that can be styled Bootstrap4 syntax
-                about: `<img src="https://img.shields.io/badge/Bootstrap-4.4.1-blue"/>
-                        <img src="https://img.shields.io/badge/Flask-2.0.1-black"/>
-                        <img src="https://img.shields.io/badge/FlaskSQLAlchemy-2.4.4-black"/>
-                        <img src="https://img.shields.io/badge/FlutterwaveApi-V3-orange"/>
-                        <img src="https://img.shields.io/badge/JQuery-3.5.1-yellow"/>
-                        <p class="pt-2">
-                            An open-source modular multivendor and multicurrency marketplace solution.<br/>
-                            Available on <a href="https://pypi.org/project/Flask-Marketplace/">PYPI</a> and 
-                            <a href="https://github.com/EwetoyeIbrahim/Flask-Marketplace">Github</a>.
-                        </p>`
-            },
-            {
                 title: "MathSend",
                 date: "2019",
                 about: `Developed <a href="http://mathsend.com/">Mathsend chatbot</a>, which handles both symbolic and
@@ -47,13 +32,7 @@ const profile_data = {
                 about: `Developed and published a Nigerian Naira denomination detection algorithm. The
                         programme, which was written in MATLAB, was published in International Journal of
                         Research and Publications (<a href="http://ijrp.org/paper-detail/466">DOI: 100191122018465</a>`
-            },
-            {
-                title: "Mini Control Lab",
-                date: "2016",
-                about: `Developed a MATLAB programme that simulates simple process dynamics and control problems. publicly 
-                        available on <a href="http://mathworks.com/matlabcentral/fileexchange/58946-mini-control-lab">Matlab Central</a>.`
-            },
+            } 
         ]
     },
     skills: {
