@@ -24,7 +24,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" t-attf-href="https://github.com/EwetoyeIbrahim/static_assets/raw/master/EwetoyeIbrahim/EwetoyeIbrahim_Latest.pdf">
-                            <i class="fas fa-download pr-1"></i>
+                            <i class="fas fa-download pr-1"></i>Download
                         </a>
                     </li>
                     <li class="nav-item" t-foreach="profile" t-as="pkey" t-key="pkey_index" t-if="pkey_value.id">
