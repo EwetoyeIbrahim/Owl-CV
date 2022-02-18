@@ -168,9 +168,15 @@ const profile_data = {
         icon: "fas fa-briefcase",
         entries: [
             {
+                title: "IT Manager",
+                sub_title: "Mathsend.com, Ikorodu, Lagos State.",
+                date: "2018 - Date",
+                about: `Maintained IT infrastructures of the business`,
+            },
+            {
                 title: "Full Stack Developer",
                 sub_title: "Medsaf.com, Parkview, Lagos State.",
-                date: "2019 - Date",
+                date: "2019 - 2021",
                 about: `Deployed and maintains the organization's ERP platform;
                 In charge of developing new businesssolutions`,
             },
