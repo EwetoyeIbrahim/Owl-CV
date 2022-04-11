@@ -147,8 +147,8 @@ const profile_data = {
         icon: "fas fa-graduation-cap",
         entries: [
             {
-                title: "Elastic Google Cloud Infrastructure: Scaling and Automation,
-                sub_title: "Google Cloud",
+                title: "Elastic Google Cloud Infrastructure: Scaling and Automation",
+                sub_title: `Google Cloud, <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7">View Certificate</a>`,
                 date: "2021",
                 about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services.`,
             },
