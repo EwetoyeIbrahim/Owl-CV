@@ -6,6 +6,38 @@ const profile_data = {
     tag_line: "Knowing is not enough, we must apply...", // Optional favourite line
     
     // Next, you define sections of your CV and their entries as exemplified in the subsequent example.
+    education: {
+        id: "Education",
+        color: "green",
+        header: "Education and Trainings",
+        icon: "fas fa-graduation-cap",
+        entries: [
+            {
+                title: "Blockchain Specialization",
+                sub_title: "University of Buffalo",
+                date: "2022-Date",
+                about: `Learning not only how to design and program smart contracts and decentralized application; but also how to think of innovative application models, leveraging the blockchain technology.`,
+            },
+            {
+                title: "Elastic Google Cloud Infrastructure: Scaling and Automation",
+                sub_title: "Google Cloud",
+                date: "2021",
+                about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services. <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7"><i>View Certificate</i></a>`,
+            },
+            {   title: "B.Tech. Chemical Engineering",
+                sub_title: "Ladoke Akintola University of Technology, Oyo State.",
+                date: "2011-2018",
+                about: `Badged Second Class Upper Honour, and was part of several research teams
+                        in areas where computer applications were needed.`,
+            },
+            {
+                title: "ICT Certification",
+                sub_title: "Ladoke Akintola University of Technology, Oyo State.",
+                date: "2012",
+                about: `Badged Distinction`,
+            },
+        ]
+    },
     projects: {
         id: "Projects", // Sections must possess an ID like this.
         /* Optional type key:
@@ -140,32 +172,7 @@ const profile_data = {
             ]
         }
     },
-    education: {
-        id: "Education",
-        color: "green",
-        header: "Education and Trainings",
-        icon: "fas fa-graduation-cap",
-        entries: [
-            {
-                title: "Elastic Google Cloud Infrastructure: Scaling and Automation",
-                sub_title: "Google Cloud",
-                date: "2021",
-                about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services. <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7"><i>View Certificate</i></a>`,
-            },
-            {   title: "B.Tech. Chemical Engineering",
-                sub_title: "Ladoke Akintola University of Technology, Oyo State.",
-                date: "2011-2018",
-                about: `Badged Second Class Upper Honour, and was part of several research teams
-                        in areas where computer applications were needed.`,
-            },
-            {
-                title: "ICT Certification",
-                sub_title: "Ladoke Akintola University of Technology, Oyo State.",
-                date: "2012",
-                about: `Badged Distinction`,
-            },
-        ]
-    },
+
     experience: {
         id: "Experience",
         color: "green",
