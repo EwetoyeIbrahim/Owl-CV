@@ -14,7 +14,7 @@ const profile_data = {
         entries: [
             {
                 title: "Blockchain Specialization",
-                sub_title: "University of Buffalo",
+                sub_title: "The State University of New York",
                 date: "2022-Date",
                 about: `Learning not only how to design and program smart contracts and decentralized application; but also how to think of innovative application models, leveraging the blockchain technology.`,
             },
