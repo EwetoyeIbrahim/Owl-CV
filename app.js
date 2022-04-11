@@ -148,9 +148,9 @@ const profile_data = {
         entries: [
             {
                 title: "Elastic Google Cloud Infrastructure: Scaling and Automation",
-                sub_title: `Google Cloud, <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7">View Certificate</a>`,
+                sub_title: "Google Cloud",
                 date: "2021",
-                about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services.`,
+                about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services. <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7"><i>View Certificate</i></a>`,
             },
             {   title: "B.Tech. Chemical Engineering",
                 sub_title: "Ladoke Akintola University of Technology, Oyo State.",
