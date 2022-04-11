@@ -147,7 +147,12 @@ const profile_data = {
         icon: "fas fa-graduation-cap",
         entries: [
             {
-                title: "B.Tech. Chemical Engineering",
+                title: "Elastic Google Cloud Infrastructure: Scaling and Automation,
+                sub_title: `Google Cloud, <a href="https://www.coursera.org/account/accomplishments/certificate/EK75DNVTL4A7">Certificate</a>`,
+                date: "2021",
+                about: `Explored and deployed solution elements, including securely interconnecting networks, load balancing, autoscaling, infrastructure automation and managed services.`,
+            },
+            {   title: "B.Tech. Chemical Engineering",
                 sub_title: "Ladoke Akintola University of Technology, Oyo State.",
                 date: "2011-2018",
                 about: `Badged Second Class Upper Honour, and was part of several research teams
