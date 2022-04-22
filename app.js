@@ -15,8 +15,8 @@ const profile_data = {
             {
                 title: "Blockchain Specialization",
                 sub_title: "The State University of New York",
-                date: "2022-Date",
-                about: `Learning not only how to design and program smart contracts and decentralized application; but also how to think of innovative application models, leveraging the blockchain technology.`,
+                date: "2022",
+                about: `Learnt not only how to design and program smart contracts and decentralized application; but also how to think of innovative application models, leveraging the blockchain technology. <a href="https://coursera.org/verify/specialization/SPWLYQ9U2SCN"><i>View Certificate</i></a>`,
             },
             {
                 title: "Elastic Google Cloud Infrastructure: Scaling and Automation",
